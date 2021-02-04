@@ -1,5 +1,5 @@
 # GoGo Gopher
-Formålet med repoet er å lære best practices på flere plan, som mappestruktur, authN/Z, bygg m.m., samtidig som vi lærer språket Go. 
+Her skal vi lære best practices på flere plan, som mappestruktur, how-to reaktiv arkitektur i språket, authN/Z, bygg m.m., samtidig som vi lærer språket Go. 
 
 ## Greia er:
 Formålet med hele repoet er læring! Kjør på med kode og ha det moro! Noe av det vi lager blir kansje gull, noe er kull og resten er kanskje bare møkk. Ikke vær sjenert for å prøve ut rare greier, vi gjør dette for læringens skyld og ingen får alt riktig på første forsøk.
