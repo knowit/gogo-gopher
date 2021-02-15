@@ -11,6 +11,7 @@ Lista for lenker, bøker og videosnutter som er om Go
 ### Andre lenker
 - [awesome-go](https://github.com/avelino/awesome-go)
 - [package structure in Go](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
+- [Go by example](https://gobyexample.com/)
 
 ## Video (leser ikke det da doh!)
 
