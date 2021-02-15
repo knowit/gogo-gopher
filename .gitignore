@@ -11,5 +11,8 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# Ignores the crud-webapp binary
+crud-webapp/crud-webapp
+
 # Dependency directories (remove the comment below to include it)
 # vendor/
