@@ -6,6 +6,7 @@ Formålet med hele repoet er læring! Kjør på med kode og ha det moro! Noe av 
 
 ## Kjøreregler og struktur i repoet
 Tanken er å dele hele repoet inn i flere mapper, sånn at vi alle kan jobbe separert, men enkelt kunne se på hva andre gjør og hente inspirasjon fra hverandre.
+
 Konvensjon for mappenavn: finnes ikke! kall mappa hva enn du vil, men husk gjerne hvilken mappe som er "din".
 Jobb gjerne sammen! Hopp på eksisterende prosjektmapper! Kopier andres prosjekter til en ny mappe og ta det i din retning!
 
