@@ -12,7 +12,7 @@
 *.out
 
 # Ignores the crud-webapp binary
-crud-webapp/crud-webapp
+crud-webapp/main
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
