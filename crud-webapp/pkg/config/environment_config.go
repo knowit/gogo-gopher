@@ -1,4 +1,4 @@
-package runenv
+package config
 
 type EnvironmentConfig struct {
 	production bool
