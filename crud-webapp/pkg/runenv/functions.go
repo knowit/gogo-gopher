@@ -1,54 +1,67 @@
 package runenv
 
 import (
+	"log"
 	"os"
 	"strconv"
 	"strings"
 )
 
-func New() *Config {
-	return &Config{
-		Environment: EnvironmentConfig{
-			production: getEnvAsBool("IS_PRODUCTION", false),
-		},
-		DebugMode: getEnvAsBool("DEBUG_MODE", true),
+func GetEnv(key string, defaultValue string) string {
+	value, exists := os.LookupEnv(key)
+
+	if !exists {
+		log.Printf("Could not find a value for key '%v'. Returning defaultValue '%v'\n", key, defaultValue)
+		return defaultValue
 	}
+
+	return value
 }
 
-func getEnv(key string, defaultVal string) string {
-	if value, exists := os.LookupEnv(key); exists {
-		return value
+func GetEnvAsInt(name string, defaultValue int) int {
+	valueStr := GetEnv(name, "")
+	value, err := strconv.Atoi(valueStr)
+
+	if err != nil {
+		log.Printf("Could not convert the value '%v' from key '%v' to int. Returning defaultValue '%v'\n",
+			valueStr,
+			name,
+			defaultValue,
+		)
+		return defaultValue
 	}
 
-	return defaultVal
+
+	return value
 }
 
-func getEnvAsInt(name string, defaultVal int) int {
-	valueStr := getEnv(name, "")
-	if value, err := strconv.Atoi(valueStr); err == nil {
-		return value
+func GetEnvAsBool(name string, defaultValue bool) bool {
+	valueString := GetEnv(name, "")
+
+	if valueString == "" {
+		log.Printf("Could not find a value for key '%v'. Returning defaultValue '%v'\n", name, defaultValue)
+		return defaultValue
 	}
 
-	return defaultVal
+	value, err := strconv.ParseBool(valueString)
+
+	if err != nil {
+		log.Printf("Could not convert the value '%v' from key '%v' to bool. Returning defaultValue '%v'\n", value, )
+		return defaultValue
+	}
+
+	return value
 }
 
-func getEnvAsBool(name string, defaultVal bool) bool {
-	valStr := getEnv(name, "")
-	if val, err := strconv.ParseBool(valStr); err == nil {
-		return val
+func GetEnvAsSlice(name string, defaultValues []string, sep string) []string {
+	valueString := GetEnv(name, "")
+
+	if valueString == "" {
+		log.Printf("Could not find the value for key '%v'. Returning defaultValues '%v'\n", name, defaultValues)
+		return defaultValues
 	}
 
-	return defaultVal
-}
+	values := strings.Split(valueString, sep)
 
-func getEnvAsSlice(name string, defaultVal []string, sep string) []string {
-	valStr := getEnv(name, "")
-
-	if valStr == "" {
-		return defaultVal
-	}
-
-	val := strings.Split(valStr, sep)
-
-	return val
+	return values
 }

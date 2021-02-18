@@ -1,4 +1,4 @@
-package runenv
+package config
 
 type Config struct {
 	Environment EnvironmentConfig
