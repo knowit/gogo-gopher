@@ -15,6 +15,8 @@ Lista for lenker, bøker og videosnutter som er om Go
 - [awesome-go](https://github.com/avelino/awesome-go)
 - [package structure in Go](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
 - [Go by example](https://gobyexample.com/)
+- [Go testable architecture - medium article](https://medium.com/@rholcombe30/building-go-microservices-focused-on-testability-d6164751275d)
+  - [Go testable architecture - example app](https://github.com/ryan-holcombe/testable-golang)
 
 ### Andre lenker
 - [12-factor apps](https://12factor.net/)
