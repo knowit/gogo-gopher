@@ -14,6 +14,7 @@ Lista for lenker, bøker og videosnutter som er om Go
 ### Andre lenker relatert til Go
 - [awesome-go](https://github.com/avelino/awesome-go)
 - [package structure in Go](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
+- [Slice tricks](https://github.com/golang/go/wiki/SliceTricks)
 - [Go by example](https://gobyexample.com/)
 - [Go testable architecture - medium article](https://medium.com/@rholcombe30/building-go-microservices-focused-on-testability-d6164751275d)
   - [Go testable architecture - example app](https://github.com/ryan-holcombe/testable-golang)
