@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/knowit/gogo-gopher/crud-webapp/pkg/config"
-	"github.com/knowit/gogo-gopher/crud-webapp/pkg/runenv"
 	"log"
+
+	"github.com/knowit/gogo-gopher/crud-webapp/config"
+	"github.com/knowit/gogo-gopher/crud-webapp/runenv"
 )
 
 func main() {
