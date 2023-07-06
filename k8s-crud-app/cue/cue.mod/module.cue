@@ -1,1 +1,1 @@
-module: "github.com/stefanprodan/podinfo/cue"
+module: "github.com/knowit/gogo-gopher/k8s-crud-app/cue"

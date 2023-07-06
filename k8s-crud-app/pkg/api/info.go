@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/stefanprodan/podinfo/pkg/version"
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/version"
 )
 
 // Info godoc

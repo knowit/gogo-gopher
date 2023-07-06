@@ -1,4 +1,4 @@
-module github.com/stefanprodan/podinfo
+module github.com/knowit/gogo-gopher/k8s-crud-app
 
 go 1.19
 

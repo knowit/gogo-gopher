@@ -9,7 +9,7 @@ import (
 	"net/http/httptrace"
 	"sync"
 
-	"github.com/stefanprodan/podinfo/pkg/version"
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/version"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 	"go.uber.org/zap"

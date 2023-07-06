@@ -7,7 +7,7 @@ backend: #http://backend-podinfo:9898/echo
 backends: []
 
 image:
-  repository: ghcr.io/stefanprodan/podinfo
+  repository: ghcr.io/knowit/gogo-gopher/k8s-crud-app
   tag: 6.4.0
   pullPolicy: IfNotPresent
 

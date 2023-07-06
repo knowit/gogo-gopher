@@ -13,10 +13,10 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/stefanprodan/podinfo/pkg/api"
-	"github.com/stefanprodan/podinfo/pkg/grpc"
-	"github.com/stefanprodan/podinfo/pkg/signals"
-	"github.com/stefanprodan/podinfo/pkg/version"
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/api"
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/grpc"
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/signals"
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/version"
 	go_grpc "google.golang.org/grpc"
 )
 
@@ -76,7 +76,7 @@ func main() {
 	viper.RegisterAlias("backendUrl", "backend-url")
 	hostname, _ := os.Hostname()
 	viper.SetDefault("jwt-secret", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9")
-	viper.SetDefault("ui-logo", "https://raw.githubusercontent.com/stefanprodan/podinfo/gh-pages/cuddle_clap.gif")
+	viper.SetDefault("ui-logo", "https://raw.githubusercontent.com/knowit/gogo-gopher/k8s-crud-app/gh-pages/cuddle_clap.gif")
 	viper.Set("hostname", hostname)
 	viper.Set("version", version.VERSION)
 	viper.Set("revision", version.REVISION)

@@ -13,7 +13,7 @@ import (
 	serviceMonitor: #serviceMonConfig
 
 	image: {
-		repository: *"ghcr.io/stefanprodan/podinfo" | string
+		repository: *"ghcr.io/knowit/gogo-gopher/k8s-crud-app" | string
 		pullPolicy: *"IfNotPresent" | string
 		tag:        string
 	}

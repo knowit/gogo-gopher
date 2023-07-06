@@ -1,7 +1,7 @@
 package main
 
 import (
-	podinfo "github.com/stefanprodan/podinfo/cue/podinfo"
+	podinfo "github.com/knowit/gogo-gopher/k8s-crud-app/cue/podinfo"
 )
 
 app: podinfo.#Application & {

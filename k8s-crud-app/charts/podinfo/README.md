@@ -10,7 +10,7 @@ for end-to-end testing and workshops.
 ## Installing the Chart
 
 The Podinfo charts are published to
-[GitHub Container Registry](https://github.com/stefanprodan/podinfo/pkgs/container/charts%2Fpodinfo)
+[GitHub Container Registry](https://github.com/knowit/gogo-gopher/k8s-crud-app/pkgs/container/charts%2Fpodinfo)
 and signed with [Cosign](https://github.com/sigstore/cosign) & GitHub Actions OIDC.
 
 To install the chart with the release name `my-release` from GHCR:
@@ -67,7 +67,7 @@ The following tables lists the configurable parameters of the podinfo chart and 
 | `faults.unready`                  | `false`                | When set, the ready state is never reached                                                                             |
 | `faults.testFail`                 | `false`                | When set, a helm test is included which always fails                                                                   |
 | `faults.testTimeout`              | `false`                | When set, a helm test is included which always times out                                                               |
-| `image.repository`                | `stefanprodan/podinfo` | Image repository                                                                                                       |
+| `image.repository`                | `knowit/gogo-gopher/k8s-crud-app` | Image repository                                                                                                       |
 | `image.tag`                       | `<VERSION>`            | Image tag                                                                                                              |
 | `image.pullPolicy`                | `IfNotPresent`         | Image pull policy                                                                                                      |
 | `service.enabled`                 | `true`                 | Create a Kubernetes Service, should be disabled when using [Flagger](https://flagger.app)                              |

@@ -13,9 +13,9 @@ import (
 
 	"github.com/gomodule/redigo/redis"
 	"github.com/gorilla/mux"
+	_ "github.com/knowit/gogo-gopher/k8s-crud-app/pkg/api/docs"
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/fscache"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	_ "github.com/stefanprodan/podinfo/pkg/api/docs"
-	"github.com/stefanprodan/podinfo/pkg/fscache"
 	httpSwagger "github.com/swaggo/http-swagger"
 	"github.com/swaggo/swag"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
@@ -30,10 +30,10 @@ import (
 // @description Go microservice template for Kubernetes.
 
 // @contact.name Source Code
-// @contact.url https://github.com/stefanprodan/podinfo
+// @contact.url https://github.com/knowit/gogo-gopher/k8s-crud-app
 
 // @license.name MIT License
-// @license.url https://github.com/stefanprodan/podinfo/blob/master/LICENSE
+// @license.url https://github.com/knowit/gogo-gopher/k8s-crud-app/blob/master/LICENSE
 
 // @host localhost:9898
 // @BasePath /

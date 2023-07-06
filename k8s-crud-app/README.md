@@ -1,10 +1,10 @@
 # podinfo
 
-[![e2e](https://github.com/stefanprodan/podinfo/workflows/e2e/badge.svg)](https://github.com/stefanprodan/podinfo/blob/master/.github/workflows/e2e.yml)
-[![test](https://github.com/stefanprodan/podinfo/workflows/test/badge.svg)](https://github.com/stefanprodan/podinfo/blob/master/.github/workflows/test.yml)
-[![cve-scan](https://github.com/stefanprodan/podinfo/workflows/cve-scan/badge.svg)](https://github.com/stefanprodan/podinfo/blob/master/.github/workflows/cve-scan.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/stefanprodan/podinfo)](https://goreportcard.com/report/github.com/stefanprodan/podinfo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/stefanprodan/podinfo)](https://hub.docker.com/r/stefanprodan/podinfo)
+[![e2e](https://github.com/knowit/gogo-gopher/k8s-crud-app/workflows/e2e/badge.svg)](https://github.com/knowit/gogo-gopher/k8s-crud-app/blob/master/.github/workflows/e2e.yml)
+[![test](https://github.com/knowit/gogo-gopher/k8s-crud-app/workflows/test/badge.svg)](https://github.com/knowit/gogo-gopher/k8s-crud-app/blob/master/.github/workflows/test.yml)
+[![cve-scan](https://github.com/knowit/gogo-gopher/k8s-crud-app/workflows/cve-scan/badge.svg)](https://github.com/knowit/gogo-gopher/k8s-crud-app/blob/master/.github/workflows/cve-scan.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/knowit/gogo-gopher/k8s-crud-app)](https://goreportcard.com/report/github.com/knowit/gogo-gopher/k8s-crud-app)
+[![Docker Pulls](https://img.shields.io/docker/pulls/knowit/gogo-gopher/k8s-crud-app)](https://hub.docker.com/r/knowit/gogo-gopher/k8s-crud-app)
 
 Podinfo is a tiny web application made with Go that showcases best practices of running microservices in Kubernetes.
 Podinfo is used by CNCF projects like [Flux](https://github.com/fluxcd/flux2) and [Flagger](https://github.com/fluxcd/flagger)
@@ -60,7 +60,7 @@ gRPC API:
 
 Web UI:
 
-![podinfo-ui](https://raw.githubusercontent.com/stefanprodan/podinfo/gh-pages/screens/podinfo-ui-v3.png)
+![podinfo-ui](https://raw.githubusercontent.com/knowit/gogo-gopher/k8s-crud-app/gh-pages/screens/podinfo-ui-v3.png)
 
 To access the Swagger UI open `<podinfo-host>/swagger/index.html` in a browser.
 
@@ -109,13 +109,13 @@ oci://ghcr.io/stefanprodan/charts/podinfo
 #### Kustomize
 
 ```bash
-kubectl apply -k github.com/stefanprodan/podinfo//kustomize
+kubectl apply -k github.com/knowit/gogo-gopher/k8s-crud-app//kustomize
 ```
 
 #### Docker
 
 ```bash
-docker run -dp 9898:9898 stefanprodan/podinfo
+docker run -dp 9898:9898 knowit/gogo-gopher/k8s-crud-app
 ```
 
 ### Continuous Delivery

@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/knowit/gogo-gopher/k8s-crud-app/pkg/version"
 	"github.com/spf13/cobra"
-	"github.com/stefanprodan/podinfo/pkg/version"
 )
 
 func init() {
