@@ -1,4 +1,4 @@
-.PHONY generate
+.PHONY: generate
 
 generate:
 		go install github.com/kyleconroy/sqlc/cmd/sqlc@1.19.1
