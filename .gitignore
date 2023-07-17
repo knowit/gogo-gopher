@@ -19,3 +19,8 @@ crud-webapp/main
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Cruddy specifc settings
+# Ignore generated binaries
+cruddy/bin
+
