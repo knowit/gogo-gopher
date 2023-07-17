@@ -34,6 +34,15 @@ build:
 run:
 	./bin/${BINARY_NAME}-${OS}
 
+test:
+	go test ./...
+
+vet:
+	go vet ./...
+
+fmt:
+	go fmt ./...
+
 clean:
 	go clean
 	rm -f bin/*

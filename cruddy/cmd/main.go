@@ -1,20 +1,20 @@
 package main
 
 import (
-    "net/http"
-    "fmt"
-    "github.com/gorilla/mux"
+	"fmt"
+	"github.com/gorilla/mux"
+	"net/http"
 )
 
 func main() {
-    router := mux.NewRouter()
+	router := mux.NewRouter()
 
-    router.HandleFunc("/authors/{name}", func(writer http.ResponseWriter, request *http.Request) {
-        vars := mux.Vars(request)
-        name := vars["name"]
+	router.HandleFunc("/authors/{name}", func(writer http.ResponseWriter, request *http.Request) {
+		vars := mux.Vars(request)
+		name := vars["name"]
 
-        fmt.Fprintf(writer, "Name of the author: %s\n", name)
-    })
+		fmt.Fprintf(writer, "Name of the author: %s\n", name)
+	})
 
-    http.ListenAndServe(":8080", router)
+	http.ListenAndServe(":8080", router)
 }
