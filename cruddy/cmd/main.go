@@ -1,20 +1,20 @@
 package main
 
 import (
-	"fmt"
-	"github.com/gorilla/mux"
-	"net/http"
+  "go.uber.org/zap"
+  "github.com/knowit/gogo-gopher/cruddy/internal/api"
+  "github.com/knowit/gogo-gopher/cruddy/internal/logging"
 )
 
 func main() {
-	router := mux.NewRouter()
+  logger, _ := logging.InitZap()
+  defer logger.Sync()
+  stdLog := zap.RedirectStdLog(logger)
+  defer stdLog()
 
-	router.HandleFunc("/authors/{name}", func(writer http.ResponseWriter, request *http.Request) {
-		vars := mux.Vars(request)
-		name := vars["name"]
-
-		fmt.Fprintf(writer, "Name of the author: %s\n", name)
-	})
-
-	http.ListenAndServe(":8080", router)
+  srv, err := api.NewServer(logger)
+  if err != nil {
+    panic("SERVER CRASH!")
+  }
+  srv.ListenAndServe()
 }

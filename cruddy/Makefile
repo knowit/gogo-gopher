@@ -35,7 +35,7 @@ generate: ### Generating SQL code
 build: ### Build application
 	@echo "Building application..."
 	mkdir -p bin/
-	GOARCH=amd64 GOOS=${BINARY_NAME} go build -o bin/${BINARY_NAME}-${OS} cmd/main.go
+	GOARCH=amd64 GOOS=${OS} go build -o bin/${BINARY_NAME}-${OS} cmd/main.go
 	@echo "Finished building"
 
 run: ### Run application
