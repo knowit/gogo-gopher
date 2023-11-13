@@ -60,7 +60,6 @@ fmt: ### Format code
 
 clean: ### Cleaning binaries
 	@echo "Cleaning..."
-	go clean
 	rm -f bin/*
 	@echo "Finished cleaning binaries"
 

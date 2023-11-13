@@ -25,7 +25,7 @@ func main() {
 
 	httpServer, httpsServer, healthy, ready := srv.ListenAndServe()
 
-  var srvConfig api.Config
+	var srvConfig api.Config
 	stopCh := signals.SetupSignalHandler()
 	sd, _ := signals.NewShutdown(srvConfig.ServerShutdownTimeout, logger)
 	sd.Graceful(stopCh, httpServer, httpsServer, healthy, ready)

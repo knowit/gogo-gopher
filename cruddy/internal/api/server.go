@@ -26,7 +26,7 @@ type Server struct {
 }
 
 type Config struct {
-  ServerShutdownTimeout time.Duration `mapstructure:"server-shutdown-timeout"`
+	ServerShutdownTimeout time.Duration `mapstructure:"server-shutdown-timeout"`
 }
 
 func NewServer(logger *zap.Logger) (*Server, error) {
